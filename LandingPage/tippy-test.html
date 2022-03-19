@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippy Js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <button class="col-md-3 btn" id="example1">Example 1</button>
+        </div>
+    </div>
+    <div id="template">
+        <p>I'm a Tool Tip</p>
+        <video autoplay playsinline muted loop controls id="desktopFourH" style="width:350px;" class="d-none d-lg-block">
+            <source
+                src="https://player.vimeo.com/progressive_redirect/playback/685050669/rendition/1080p?loc=external&signature=3dae2e2fb1023b2c5d2e28bc07825494fe2c1fd5e97d22492274f64eeba4f85f"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@2.0.2/dist/tippy.all.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function tip() {
+
+            tippy("#example1", {
+                html: document.querySelector('#template'),
+                arrow: true,
+                animation: 'fade',
+                distance: 15,
+                arrowTransform: 'scale(2)'
+            });
+            // $('video').get(0).play();
+        }
+
+        tip();
+
+    </script>
+    
+</body>
+
+</html>
