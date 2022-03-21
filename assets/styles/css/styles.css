@@ -556,6 +556,25 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#trail_technology_section .mobile_screen .accordion .card .card-body {
+  padding-top: 0;
+}
+#trail_technology_section .mobile_screen .accordion .card .card-body img {
+  padding: 10px;
+  background-color: #ffffff;
+}
+#trail_technology_section .mobile_screen .accordion .card .card-body video {
+  padding: 10px;
+  background-color: #ffffff;
+}
+#trail_technology_section .mobile_screen .accordion .card .card-body .acc__desc {
+  margin-top: 15px;
+  color: #000000;
+  letter-spacing: 0.25px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "neuzeit-grotesk", Arial, sans-serif;
+}
 #trail_technology_section .mobile_screen .action__wrapper .btn-link {
   display: block;
   width: 100%;

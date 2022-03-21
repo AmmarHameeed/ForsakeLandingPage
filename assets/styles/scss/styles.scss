@@ -530,6 +530,29 @@ body {
             }
           }
         }
+        // .collapse{
+          .card-body{
+            padding-top: 0;
+            img{
+              padding: 10px;
+              background-color: $whiteColor;
+            }
+            video{
+              padding: 10px;
+              background-color: $whiteColor;
+            }
+            .acc__desc{
+              margin-top: 15px;
+              color: $blackColor;
+              letter-spacing: 0.25px;
+              font:{
+                size: 16px;
+                weight: 400;
+                family: $secondaryFont;
+              }
+            }
+          }
+        // }
       }
     }
     .action__wrapper{
