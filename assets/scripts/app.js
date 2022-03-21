@@ -131,13 +131,25 @@ if ($("#best_sellers_slider_mosaic .swiper-slide").length <= 3) {
   //   "invisible"
   // );
 }
-$(document).ready(function() {
+$(document).ready(function () {
+
+  //Add a minus icon to the collapse element that is open by default
+  $('.collapse.show').each(function () {
+    $(this).parent().find(".fa").removeClass("fa-plus").addClass("fa-minus");
+  });
+
+  //Toggle plus/minus icon on show/hide of collapse element
+  $('.collapse').on('shown.bs.collapse', function () {
+    $(this).parent().find(".fa").removeClass("fa-plus").addClass("fa-minus");
+  }).on('hidden.bs.collapse', function () {
+    $(this).parent().find(".fa").removeClass("fa-minus").addClass("fa-plus");
+  });
 
   //Video Modal
   var $videoSrc;
   var $videoFormat;
   var $videoEnd;
-  $(".video-btn").click(function() {
+  $(".video-btn").click(function () {
     $videoSrc = $(this).data("src");
     // console.log($videoSrc);
     // Get the video format
@@ -146,7 +158,7 @@ $(document).ready(function() {
   });
 
   // when the modal is opened autoplay it
-  $("#videoModal").on("shown.bs.modal", function(e) {
+  $("#videoModal").on("shown.bs.modal", function (e) {
     // set the video src to autoplay and not to show related video.
     if ($videoEnd) {
       $("#video").attr(
@@ -169,15 +181,15 @@ $(document).ready(function() {
         $("#videoModal").addClass("square-video");
         $(".embed-responsive").addClass("embed-responsive-detail");
       }
-      
+
     } else {
       $(".embed-responsive").addClass("embed-responsive-16by9");
     }
   });
 
-  
+
   // stop playing the youtube video when I close the modal
-  $("#videoModal").on("hide.bs.modal", function(e) {
+  $("#videoModal").on("hide.bs.modal", function (e) {
     // a poor man's stop video
     $("#video").attr("src", $videoSrc);
 
@@ -191,7 +203,7 @@ $(document).ready(function() {
   // Auto Play Video Modal Based on URL Parameters
 
   // break down passed params
-  $.urlParam = function(name) {
+  $.urlParam = function (name) {
     var results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
       window.location.href
     );
@@ -224,7 +236,7 @@ $(document).ready(function() {
   // console.log("create dataIds");
 
   // loop through all the videos on the page
-  $('.video-btn[data-target="#videoModal"]').each(function() {
+  $('.video-btn[data-target="#videoModal"]').each(function () {
     dataIds.push($(this).data("id"));
     // console.log("search for video modals");
   });
