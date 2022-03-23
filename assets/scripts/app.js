@@ -132,6 +132,8 @@ if ($("#best_sellers_slider_mosaic .swiper-slide").length <= 3) {
   // );
 }
 $(document).ready(function () {
+  
+  
 
   //Add a minus icon to the collapse element that is open by default
   $('.collapse.show').each(function () {
@@ -292,9 +294,11 @@ $(document).ready(function () {
 }); // END document ready function
 
 function tip() {
+  $(".template-tippy").show();
 
   tippy(".icon1", {
       html: document.querySelector('#template1'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
@@ -302,6 +306,7 @@ function tip() {
   });
   tippy(".icon2", {
       html: document.querySelector('#template2'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
@@ -309,13 +314,18 @@ function tip() {
   });
   tippy(".icon3", {
       html: document.querySelector('#template3'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
-      arrowTransform: 'scale(2)'
+      arrowTransform: 'scale(2)',
+      // onShow: function onShow() {
+      //   $('#video3')[0].play();
+      // },
   });
   tippy(".icon4", {
       html: document.querySelector('#template4'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
@@ -323,6 +333,7 @@ function tip() {
   });
   tippy(".icon5", {
       html: document.querySelector('#template5'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
@@ -330,13 +341,17 @@ function tip() {
   });
   tippy(".icon6", {
       html: document.querySelector('#template6'),
+      theme: 'light',
       arrow: true,
       animation: 'fade',
       distance: 15,
       arrowTransform: 'scale(2)'
   });
+  // $(".icon3").hover(function(){
+  //   console.log("nowwww");
+  //   $('#video3')[0].play();
+  // })
   
-  // $('video').get(0).play();
 }
 
 tip();

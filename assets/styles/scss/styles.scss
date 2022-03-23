@@ -518,8 +518,8 @@ body {
             }
             .trail_technology-icon {
               display: inline-block;
-              width: 70px;
-              height: 75px;
+              width: 60px;
+              height: 65px;
               
               background-repeat: no-repeat;
               background-size: contain;
@@ -527,16 +527,16 @@ body {
             }
             span{
               // display: none;
-              font-size: 1rem;
+              font-size: 12px;
               letter-spacing: 0.8px;
               font-weight: 700;
               text-transform: uppercase;
             }
             &.left {
               left: -40%;
-              @media screen and (max-width:1200px) and (min-width:992px) {
-                left: -45%;
-              }
+              // @media screen and (max-width:1200px) and (min-width:992px) {
+              //   left: -45%;
+              // }
               .trail_technology-icon{
                 margin-right: 10px;
               }
@@ -549,30 +549,37 @@ body {
             }
             &.bloom_footbed-marker {
               // left: -35%;
-              top: -25px;
-              @media screen and (max-width:1200px) and (min-width:992px) {
-                top: -70px;
-              }
+              top: -7px;
+              width: 85%;
+              // @media screen and (max-width:1200px) and (min-width:992px) {
+              //   top: -70px;
+              // }
             }
             &.lace_keeper-marker {
               // left: -35%;
-              top: 22%;
+              // top: 26%;
+              top: 31%;
+    width: 70%;
             }
             &.zonal_waterproofing-marker {
-              // left: -35%;
-              top: 50%;
+              // top: 53%;
+              bottom: 0;
+    width: 55%;
             }
             &.engineering_mesh-marker {
-              top: 42.5%;
+              top: 47%;
               right: -48%;
+              width: 60%;
             }
             &.multigrip_outsole-marker {
               right: -30%;
-              bottom: 11%;
+    bottom: 8%;
+    width: 88%;
             }
             &.tpu_reinforcement-marker {
-              right: -10%;
-              bottom: -45px;
+              right: -13%;
+    bottom: -20%;
+    width: 100%;
             }
           }
         }
@@ -1000,4 +1007,27 @@ body {
       }
     }
   }
+}
+.tippy-popper{
+  width: 25%;
+  .tippy-tooltip.light-theme{
+    // background: $whiteColor;
+    // color: $blackColor;
+    padding:12px;
+    font-size: 1rem;
+    letter-spacing: 0.25px;
+    line-height: 18px;
+    .tippy-content{
+      video{
+        width: 100% !important;
+      }
+      .tippy__desc{
+        margin-top: 17px;
+      }
+      // border-color: $whiteColor;
+    }
+  }
+}
+.template-tippy{
+  display: none;
 }
