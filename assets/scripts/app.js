@@ -290,3 +290,53 @@ $(document).ready(function () {
   //     console.log("working");
   //   }
 }); // END document ready function
+
+function tip() {
+
+  tippy(".icon1", {
+      html: document.querySelector('#template1'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  tippy(".icon2", {
+      html: document.querySelector('#template2'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  tippy(".icon3", {
+      html: document.querySelector('#template3'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  tippy(".icon4", {
+      html: document.querySelector('#template4'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  tippy(".icon5", {
+      html: document.querySelector('#template5'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  tippy(".icon6", {
+      html: document.querySelector('#template6'),
+      arrow: true,
+      animation: 'fade',
+      distance: 15,
+      arrowTransform: 'scale(2)'
+  });
+  
+  // $('video').get(0).play();
+}
+
+tip();

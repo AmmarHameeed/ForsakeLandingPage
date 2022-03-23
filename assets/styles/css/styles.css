@@ -297,6 +297,11 @@ body {
     margin-bottom: 25px;
   }
 }
+@media screen and (max-width: 767px) {
+  #best_sellers_slider_men .best_sellers_slider--men .best_sellers_slider__slide {
+    text-align: center;
+  }
+}
 #best_sellers_slider_men .best_sellers_slider--men .best_sellers_slider__slide img {
   max-width: 360px;
 }
@@ -368,6 +373,11 @@ body {
   #best_sellers_slider_women .best_sellers_slider--women .swiper__heading-container .swiper__heading--text {
     font-size: 20px;
     margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #best_sellers_slider_women .best_sellers_slider--women .best_sellers_slider__slide {
+    text-align: center;
   }
 }
 #best_sellers_slider_women .best_sellers_slider--women .best_sellers_slider__slide img {
@@ -505,6 +515,97 @@ body {
   }
 }
 
+#trail_technology_section .desktop_screen .trail__banner-wrapper {
+  position: relative;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center {
+  position: relative;
+  height: 100%;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper .trail_technology-icon {
+  display: inline-block;
+  width: 70px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='92.3' height='98.4' viewBox='0 0 92.3 98.4'%3E%3Cg id='Group_1005' data-name='Group 1005' transform='translate(-11441.602 -603.281)'%3E%3Cpath id='Path_505' data-name='Path 505' d='M284.8,211.681a10.172,10.172,0,0,1-4.927-1.273L244.866,191.2a10.2,10.2,0,0,1-5.264-8.921v-37.6a10.2,10.2,0,0,1,5.27-8.925l34.994-19.2a9.975,9.975,0,0,1,9.761,0l35.009,19.2a10.2,10.2,0,0,1,5.265,8.922v37.6a10.2,10.2,0,0,1-5.271,8.924l-34.994,19.2A9.487,9.487,0,0,1,284.8,211.681Z' transform='translate(11203 489)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='Path_506' data-name='Path 506' d='M273.289,158.631a13.012,13.012,0,0,1-1.181-5.4,12.5,12.5,0,1,1,25,0,12.987,12.987,0,0,1-1.182,5.4' transform='translate(11203 489)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='Path_507' data-name='Path 507' d='M254.7,145.913v8.6a12.879,12.879,0,0,0,12.865,12.865h29.913' transform='translate(11203 489)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='Path_508' data-name='Path 508' d='M295.973,167.613a13.036,13.036,0,0,1,1.185,5.417,12.548,12.548,0,1,1-25.1,0,13.025,13.025,0,0,1,1.187-5.417' transform='translate(11203 489)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cline id='Line_168' data-name='Line 168' x2='25.731' transform='translate(11474.745 652.122)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='Path_509' data-name='Path 509' d='M271.745,158.861h29.908a12.881,12.881,0,0,1,12.866,12.865v8.6' transform='translate(11203 489)' fill='none' stroke='%231a1818' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper span {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.left {
+  left: -40%;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.left {
+    left: -45%;
+  }
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.left .trail_technology-icon {
+  margin-right: 10px;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.right {
+  right: 0;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.right .trail_technology-icon {
+  margin-left: 10px;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.bloom_footbed-marker {
+  top: -25px;
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.bloom_footbed-marker {
+    top: -70px;
+  }
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.lace_keeper-marker {
+  top: 22%;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.zonal_waterproofing-marker {
+  top: 50%;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.engineering_mesh-marker {
+  top: 42.5%;
+  right: -48%;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.multigrip_outsole-marker {
+  right: -30%;
+  bottom: 11%;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.tpu_reinforcement-marker {
+  right: -10%;
+  bottom: -45px;
+}
 #trail_technology_section .mobile_screen {
   background: #d3d3d3;
   padding-bottom: 60px;
