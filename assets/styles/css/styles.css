@@ -1080,10 +1080,12 @@ body {
   width: 25%;
 }
 .tippy-popper .tippy-tooltip.light-theme {
-  padding: 12px;
   font-size: 1rem;
   letter-spacing: 0.25px;
   line-height: 18px;
+}
+.tippy-popper .tippy-tooltip.light-theme .tippy-content iframe {
+  width: 100% !important;
 }
 .tippy-popper .tippy-tooltip.light-theme .tippy-content video {
   width: 100% !important;

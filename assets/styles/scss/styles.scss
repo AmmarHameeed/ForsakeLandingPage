@@ -1060,11 +1060,14 @@ body {
   .tippy-tooltip.light-theme {
     // background: $whiteColor;
     // color: $blackColor;
-    padding: 12px;
+    // padding: 12px;
     font-size: 1rem;
     letter-spacing: 0.25px;
     line-height: 18px;
     .tippy-content {
+      iframe{
+        width: 100% !important;
+      }
       video {
         width: 100% !important;
       }
