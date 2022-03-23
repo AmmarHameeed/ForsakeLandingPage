@@ -520,8 +520,8 @@ body {
 }
 #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links {
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -531,6 +531,79 @@ body {
 #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center {
   position: relative;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .left-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 50%;
+}
+@media screen and (min-width: 1800px) {
+  #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .left-wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .left-wrapper .left-inner {
+  position: relative;
+  width: 50%;
+  margin-left: -75px;
+  margin-bottom: 75px;
+  display: inline-block;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .right-wrapper {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .right-wrapper .right-inner {
+  position: relative;
+  width: 50%;
+  margin-right: -75px;
+  margin-bottom: 75px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .right-wrapper .right-inner:last-child {
+  margin-bottom: 0;
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .right-wrapper .right-inner:nth-child(2) {
+  margin-right: calc(15% - 75px);
+}
+#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .right-wrapper .right-inner:nth-child(3) {
+  margin-right: calc(30% - 75px);
 }
 #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper {
   display: -webkit-box;
@@ -539,7 +612,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  width: 100%;
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper {
@@ -574,33 +647,6 @@ body {
 }
 #trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.right .trail_technology-icon {
   margin-left: 10px;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.bloom_footbed-marker {
-  top: -7px;
-  width: 85%;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.lace_keeper-marker {
-  top: 31%;
-  width: 75%;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.zonal_waterproofing-marker {
-  bottom: 0;
-  width: 55%;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.engineering_mesh-marker {
-  top: 47%;
-  right: -48%;
-  width: 60%;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.multigrip_outsole-marker {
-  right: -30%;
-  bottom: 8%;
-  width: 88%;
-}
-#trail_technology_section .desktop_screen .trail__banner-wrapper .center__model-wraper--links .center .image_marker-wrapper.tpu_reinforcement-marker {
-  right: -13%;
-  bottom: -20%;
-  width: 100%;
 }
 #trail_technology_section .mobile_screen {
   background: #d3d3d3;

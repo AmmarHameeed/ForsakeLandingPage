@@ -315,13 +315,11 @@ function tip() {
   tippy(".icon3", {
       html: document.querySelector('#template3'),
       theme: 'light',
+      hideOnClick: false,
       arrow: true,
       animation: 'fade',
       distance: 15,
       arrowTransform: 'scale(2)',
-      // onShow: function onShow() {
-      //   $('#video3')[0].play();
-      // },
   });
   tippy(".icon4", {
       html: document.querySelector('#template4'),
