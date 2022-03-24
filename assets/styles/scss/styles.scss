@@ -220,7 +220,7 @@ body {
     text-align: center;
     color: $whiteColor;
     @media screen and (max-width: 767px) {
-      top: 20px;
+      top: 55px;
     }
     .heading__text-bigger {
       text-transform: uppercase;
@@ -243,6 +243,16 @@ body {
       }
       @media screen and (max-width: 767px) {
         font-size: 12px;
+      }
+    }
+  }
+  .sketchfab-embed-wrapper{
+    @media screen and (max-width: 767px) {
+      height: calc(100vh - 220px);
+    }
+    iframe{
+      @media screen and (max-width: 767px) {
+        height: 100% !important;
       }
     }
   }

@@ -208,7 +208,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   #hero_section .hero_section-heading {
-    top: 20px;
+    top: 55px;
   }
 }
 #hero_section .hero_section-heading .heading__text-bigger {
@@ -232,6 +232,16 @@ body {
 @media screen and (max-width: 767px) {
   #hero_section .hero_section-heading .heading__text-subtext {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #hero_section .sketchfab-embed-wrapper {
+    height: calc(100vh - 220px);
+  }
+}
+@media screen and (max-width: 767px) {
+  #hero_section .sketchfab-embed-wrapper iframe {
+    height: 100% !important;
   }
 }
 #hero_section .hero_section-action {
