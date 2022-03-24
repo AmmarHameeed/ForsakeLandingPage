@@ -53,6 +53,10 @@
             <a class="hero_section--link" href="#"> Shop Men</a>
             <a class="hero_section--link" href="#"> Shop Women</a>
         </div>
+        <a class="scroll_down-btn d-none d-lg-block" href="#best_sellers_slider_men">
+            Scroll down
+            <i class="icon-arrow-down"></i>
+        </a>
     </section>
 
     <!--Best Sellers Section Men -->
@@ -319,7 +323,8 @@
                         <div class="collapse" id="collapseOne" data-parent="#accordionExample">
                             <div class="card-body">
                                 <img src="../assets/images/SS22-Foresake-WPRefresh1-bloom-Mobile.png">
-                                <p class="acc__desc">BLOOM eco-friendly algae-based EVA footbed thanks helps clean polluted water habitats.</p>
+                                <p class="acc__desc">BLOOM eco-friendly algae-based EVA footbed thanks helps clean
+                                    polluted water habitats.</p>
                             </div>
                         </div>
                     </div>
@@ -357,8 +362,7 @@
                         <div class="collapse" id="collapseThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <!-- The moblie video -->
-                                <video autoplay playsinline muted loop style="width:100%;"
-                                    class="d-block d-lg-none">
+                                <video autoplay playsinline muted loop style="width:100%;" class="d-block d-lg-none">
                                     <source
                                         src="https://player.vimeo.com/progressive_redirect/playback/685051817/rendition/360p?loc=external&signature=acfeddb901590ffc7087b938dc42c192fffe55eff5558a0379f1c7b26e159ce1"
                                         type="video/mp4">
@@ -382,14 +386,14 @@
                         </div>
                         <div class="collapse" id="collapseFour" data-parent="#accordionExample">
                             <div class="card-body">
-                                <video autoplay playsinline muted loop style="width:100%;"
-                                    class="d-block d-lg-none">
+                                <video autoplay playsinline muted loop style="width:100%;" class="d-block d-lg-none">
                                     <source
                                         src="https://player.vimeo.com/progressive_redirect/playback/685051801/rendition/360p?loc=external&signature=e333e1b460a32f77bd005b187abd4e4f4dfb356a8148ee7633d28298f26ff19a"
                                         type="video/mp4">
                                 </video>
                                 <p class="acc__desc">
-                                    4mm lug depth and dual compound rubber deliver aggressive traction without sacrificing durability.
+                                    4mm lug depth and dual compound rubber deliver aggressive traction without
+                                    sacrificing durability.
                                 </p>
                             </div>
                         </div>
@@ -407,15 +411,14 @@
                         </div>
                         <div class="collapse" id="collapseFive" data-parent="#accordionExample">
                             <div class="card-body">
-                                <video autoplay playsinline muted loop style="width:100%;"
-                                class="d-block d-lg-none">
-                                <source
-                                    src="https://player.vimeo.com/progressive_redirect/playback/685051748/rendition/360p?loc=external&signature=0de7abbe7a3df9949d3f3149b681a4cac24457d00e881a5346ae6e88dfda988f"
-                                    type="video/mp4">
-                            </video>
-                            <p class="acc__desc">
-                                Engineered mesh optimized for breathability and wear resistance.
-                            </p>
+                                <video autoplay playsinline muted loop style="width:100%;" class="d-block d-lg-none">
+                                    <source
+                                        src="https://player.vimeo.com/progressive_redirect/playback/685051748/rendition/360p?loc=external&signature=0de7abbe7a3df9949d3f3149b681a4cac24457d00e881a5346ae6e88dfda988f"
+                                        type="video/mp4">
+                                </video>
+                                <p class="acc__desc">
+                                    Engineered mesh optimized for breathability and wear resistance.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -433,7 +436,8 @@
                         <div class="collapse" id="collapseSix" data-parent="#accordionExample">
                             <div class="card-body">
                                 <img src="../assets/images/SS22-Foresake-WPRefresh1-TPU-Mobile.jpg">
-                                <p class="acc__desc">No-sew TPU reinforces high abrasion areas for rugged durability.</p>
+                                <p class="acc__desc">No-sew TPU reinforces high abrasion areas for rugged durability.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -689,6 +693,20 @@
 
     <!-- Custom  Scripts -->
     <script src="../assets/scripts/app.js"></script>
+    <script>
+        $(".scroll_down-btn").on("click", function (e) {
+            console.log("clicked")
+            var i = $(this.getAttribute("href"));
+            i.length &&
+                (e.preventDefault(),
+                    $("html, body").animate(
+                        {
+                            scrollTop: i.offset().top - 60,
+                        },
+                        600
+                    ));
+        });
+    </script>
 </body>
 
 </html>

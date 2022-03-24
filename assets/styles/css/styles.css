@@ -55,6 +55,16 @@
   content: "";
 }
 
+.icon-arrow-down {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z' /%3E%3C/svg%3E");
+}
+
 .fa-plus {
   display: inline-block;
   width: 14px;
@@ -272,6 +282,32 @@ body {
   #hero_section .hero_section-action .hero_section--link:first-child {
     margin-top: 18px;
   }
+}
+#hero_section .scroll_down-btn {
+  position: absolute;
+  left: 0;
+  width: 145px;
+  text-align: center;
+  margin: auto;
+  bottom: 55px;
+  padding: 8px;
+  right: 0;
+  border-radius: 2px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #best_sellers_slider_men {
@@ -1077,17 +1113,11 @@ body {
   }
 }
 
-.foreground .tippy-popper {
-  height: 230px;
-}
-.foreground .tippy-popper .tippy-tooltip.light-theme {
-  height: 225px;
-}
-
 .tippy-popper {
   width: 25%;
 }
 .tippy-popper .tippy-tooltip.light-theme {
+  padding: 12px;
   font-size: 1rem;
   letter-spacing: 0.25px;
   line-height: 18px;
@@ -1119,7 +1149,27 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 150px;
+  height: 200px;
+}
+@media screen and (min-width: 1600px) and (max-width: 1800px) {
+  .bg-video {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 2100px) {
+  .bg-video {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 2101px) and (max-width: 2300px) {
+  .bg-video {
+    height: 320px;
+  }
+}
+@media screen and (min-width: 2301px) {
+  .bg-video {
+    height: 15vw;
+  }
 }
 .bg-video__iframe {
   position: absolute;

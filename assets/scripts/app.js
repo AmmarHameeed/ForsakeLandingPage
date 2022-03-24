@@ -132,6 +132,8 @@ if ($("#best_sellers_slider_mosaic .swiper-slide").length <= 3) {
   // );
 }
 $(document).ready(function () {
+
+  
   
   
 
