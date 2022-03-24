@@ -1055,8 +1055,17 @@ body {
     }
   }
 }
+.foreground{
+  .tippy-popper{
+    height: 230px;
+    .tippy-tooltip.light-theme {
+      height: 225px;
+    }
+  }
+}
 .tippy-popper {
   width: 25%;
+  
   .tippy-tooltip.light-theme {
     // background: $whiteColor;
     // color: $blackColor;
@@ -1064,13 +1073,14 @@ body {
     font-size: 1rem;
     letter-spacing: 0.25px;
     line-height: 18px;
+    
     .tippy-content {
-      iframe{
-        width: 100% !important;
-      }
-      video {
-        width: 100% !important;
-      }
+      // iframe{
+      //   width: 100% !important;
+      // }
+      // video {
+      //   width: 100% !important;
+      // }
       .tippy__desc {
         margin-top: 17px;
       }
@@ -1080,4 +1090,33 @@ body {
 }
 .template-tippy {
   display: none;
+}
+:root {
+  --video-width: 100vw;
+  --video-height: 100vh;
+  
+  @media (min-aspect-ratio: 16/9) {
+    --video-height: 56.25vw
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    --video-width: 177.78vh
+  }
+}
+
+.bg-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  // height: 100vh;
+
+  &__iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--video-width);
+    height: var(--video-height);
+    transform: translate(-50%, -50%);
+  }
 }
