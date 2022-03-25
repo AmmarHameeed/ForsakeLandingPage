@@ -1222,6 +1222,6 @@ body {
     left: 50%;
     width: var(--video-width);
     height: var(--video-height);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.3);
   }
 }
